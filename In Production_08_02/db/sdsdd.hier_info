@@ -1,0 +1,40 @@
+|sdsdd
+_5mks <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+_20MHz => inst29.IN0
+_20MHz => inst55.IN0
+_20MHz => inst101.IN0
+_20MHz => inst36.IN0
+_20MHz => inst81.IN0
+_20MHz => inst90.IN0
+_20MHz => inst125.IN0
+EnStop => inst51.IN0
+EnStop => dsgf18.IN0
+EnStop => instfgddd18.CLK
+EnStop => inst14.IN3
+STROB => inst3.IN0
+Comp_plus => inst14.IN2
+Comp0 => fddf3.CLK
+Comp0 => fddf3sd.CLK
+_2mks <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+STROB1 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 <= fddfssd9.DB_MAX_OUTPUT_PORT_TYPE
+reset_all <= dsgf20.DB_MAX_OUTPUT_PORT_TYPE
+_50mks <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+stop_minus <= inst77dfvdfv.DB_MAX_OUTPUT_PORT_TYPE
+CLK_TDC <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+pin91 <= fddf2.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 <= fddfssd.DB_MAX_OUTPUT_PORT_TYPE
+pin <= fddf3sd.DB_MAX_OUTPUT_PORT_TYPE
+Comp_min2 => fddfsfff.CLK
+tff49 <= fddfsfff.DB_MAX_OUTPUT_PORT_TYPE
+stop_plus <= inst77dfvdfv90.DB_MAX_OUTPUT_PORT_TYPE
+tff <= dssdfsf92.DB_MAX_OUTPUT_PORT_TYPE
+Start_TDC <= inst89.DB_MAX_OUTPUT_PORT_TYPE
+fs <= dssdfsf109.DB_MAX_OUTPUT_PORT_TYPE
+Comp_min1 => inst8.IN1
+pin_name3 <= inst64.DB_MAX_OUTPUT_PORT_TYPE
+STOP <= inst123.DB_MAX_OUTPUT_PORT_TYPE
+Strob_reverse <= mnh42.DB_MAX_OUTPUT_PORT_TYPE
+sum <= inst134.DB_MAX_OUTPUT_PORT_TYPE
+
+

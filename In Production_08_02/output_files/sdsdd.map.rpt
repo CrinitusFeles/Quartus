@@ -1,0 +1,381 @@
+Analysis & Synthesis report for sdsdd
+Thu Mar 29 13:22:57 2018
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                             ;
++-----------------------------+--------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Mar 29 13:22:57 2018      ;
+; Quartus II 32-bit Version   ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name               ; sdsdd                                      ;
+; Top-level Entity Name       ; sdsdd                                      ;
+; Family                      ; MAX7000S                                   ;
+; Total macrocells            ; 64                                         ;
+; Total pins                  ; 27                                         ;
++-----------------------------+--------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                  ;
++--------------------------------------------------------------------------------+
+Option        : Device
+Setting       : EPM7064STC44-10
+Default Value : 
+
+Option        : Top-level entity name
+Setting       : sdsdd
+Default Value : sdsdd
+
+Option        : Family name
+Setting       : MAX7000S
+Default Value : Cyclone IV GX
+
+Option        : Use smart compilation
+Setting       : Off
+Default Value : Off
+
+Option        : Enable parallel Assembler and TimeQuest Timing Analyzer during compilation
+Setting       : On
+Default Value : On
+
+Option        : Enable compact report table
+Setting       : Off
+Default Value : Off
+
+Option        : Create Debugging Nodes for IP Cores
+Setting       : Off
+Default Value : Off
+
+Option        : Preserve fewer node names
+Setting       : On
+Default Value : On
+
+Option        : Disable OpenCore Plus hardware evaluation
+Setting       : Off
+Default Value : Off
+
+Option        : Verilog Version
+Setting       : Verilog_2001
+Default Value : Verilog_2001
+
+Option        : VHDL Version
+Setting       : VHDL_1993
+Default Value : VHDL_1993
+
+Option        : State Machine Processing
+Setting       : Auto
+Default Value : Auto
+
+Option        : Safe State Machine
+Setting       : Off
+Default Value : Off
+
+Option        : Extract Verilog State Machines
+Setting       : On
+Default Value : On
+
+Option        : Extract VHDL State Machines
+Setting       : On
+Default Value : On
+
+Option        : Ignore Verilog initial constructs
+Setting       : Off
+Default Value : Off
+
+Option        : Iteration limit for constant Verilog loops
+Setting       : 5000
+Default Value : 5000
+
+Option        : Iteration limit for non-constant Verilog loops
+Setting       : 250
+Default Value : 250
+
+Option        : Add Pass-Through Logic to Inferred RAMs
+Setting       : On
+Default Value : On
+
+Option        : Infer RAMs from Raw Logic
+Setting       : On
+Default Value : On
+
+Option        : Parallel Synthesis
+Setting       : On
+Default Value : On
+
+Option        : NOT Gate Push-Back
+Setting       : On
+Default Value : On
+
+Option        : Power-Up Don't Care
+Setting       : On
+Default Value : On
+
+Option        : Remove Duplicate Registers
+Setting       : On
+Default Value : On
+
+Option        : Ignore CARRY Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore CASCADE Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore GLOBAL Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore ROW GLOBAL Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore LCELL Buffers
+Setting       : Auto
+Default Value : Auto
+
+Option        : Ignore SOFT Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Limit AHDL Integers to 32 Bits
+Setting       : Off
+Default Value : Off
+
+Option        : Optimization Technique
+Setting       : Speed
+Default Value : Speed
+
+Option        : Allow XOR Gate Usage
+Setting       : On
+Default Value : On
+
+Option        : Auto Logic Cell Insertion
+Setting       : On
+Default Value : On
+
+Option        : Parallel Expander Chain Length
+Setting       : 4
+Default Value : 4
+
+Option        : Auto Parallel Expanders
+Setting       : On
+Default Value : On
+
+Option        : Auto Open-Drain Pins
+Setting       : On
+Default Value : On
+
+Option        : Auto Resource Sharing
+Setting       : Off
+Default Value : Off
+
+Option        : Maximum Fan-in Per Macrocell
+Setting       : 100
+Default Value : 100
+
+Option        : Use LogicLock Constraints during Resource Balancing
+Setting       : On
+Default Value : On
+
+Option        : Ignore translate_off and synthesis_off directives
+Setting       : Off
+Default Value : Off
+
+Option        : Report Parameter Settings
+Setting       : On
+Default Value : On
+
+Option        : Report Source Assignments
+Setting       : On
+Default Value : On
+
+Option        : Report Connectivity Checks
+Setting       : On
+Default Value : On
+
+Option        : HDL message level
+Setting       : Level2
+Default Value : Level2
+
+Option        : Suppress Register Optimization Related Messages
+Setting       : Off
+Default Value : Off
+
+Option        : Number of Removed Registers Reported in Synthesis Report
+Setting       : 5000
+Default Value : 5000
+
+Option        : Number of Swept Nodes Reported in Synthesis Report
+Setting       : 5000
+Default Value : 5000
+
+Option        : Number of Inverted Registers Reported in Synthesis Report
+Setting       : 100
+Default Value : 100
+
+Option        : Block Design Naming
+Setting       : Auto
+Default Value : Auto
+
+Option        : Synthesis Effort
+Setting       : Auto
+Default Value : Auto
+
+Option        : Shift Register Replacement - Allow Asynchronous Clear Signal
+Setting       : On
+Default Value : On
+
+Option        : Pre-Mapping Resynthesis Optimization
+Setting       : Off
+Default Value : Off
+
+Option        : Analysis & Synthesis Message Level
+Setting       : Medium
+Default Value : Medium
+
+Option        : Disable Register Merging Across Hierarchies
+Setting       : Auto
+Default Value : Auto
+
+Option        : Synthesis Seed
+Setting       : 1
+Default Value : 1
++--------------------------------------------------------------------------------+
+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                         ;
++--------------------------------------------------------------------------------+
+File Name with User-Entered Path : sdsdd.bdf
+Used in Netlist                  : yes
+File Type                        : User Block Diagram/Schematic File 
+File Name with Absolute Path     : E:/Quartus_13.0/Projects/In Production_08_02/sdsdd.bdf
+Library                          : 
++--------------------------------------------------------------------------------+
+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++----------------------+----------------------+
+; Resource             ; Usage                ;
++----------------------+----------------------+
+; Logic cells          ; 64                   ;
+; Total registers      ; 57                   ;
+; I/O pins             ; 27                   ;
+; Shareable expanders  ; 7                    ;
+; Maximum fan-out node ; _20MHz               ;
+; Maximum fan-out      ; 36                   ;
+; Total fan-out        ; 398                  ;
+; Average fan-out      ; 4.06                 ;
++----------------------+----------------------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                            ;
++--------------------------------------------------------------------------------+
+Compilation Hierarchy Node : |sdsdd
+Macrocells                 : 64
+Pins                       : 27
+Full Hierarchy Name        : |sdsdd
+Library Name               : work
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; inst93                                ; Stuck at GND due to stuck port data_in ;
+; inst95                                ; Stuck at GND due to stuck port data_in ;
+; inst92                                ; Lost fanout                            ;
+; Total Number of Removed Registers = 3 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                    ;
++--------------------------------------------------------------------------------+
+Register name                          : inst93
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : inst92
++--------------------------------------------------------------------------------+
+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Thu Mar 29 13:22:55 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sdsdd -c sdsdd
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file sdsdd.bdf
+    Info (12023): Found entity 1: sdsdd
+Info (12127): Elaborating entity "sdsdd" for the top level hierarchy
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 98 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21063): Implemented 64 macrocells
+    Info (21073): Implemented 7 shareable expanders
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 405 megabytes
+    Info: Processing ended: Thu Mar 29 13:22:57 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

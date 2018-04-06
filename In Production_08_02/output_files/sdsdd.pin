@@ -1,0 +1,107 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCC           : Dedicated power pin, which MUST be connected to VCC.
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- NON_MIGRATABLE: This pin cannot be migrated.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+CHIP  "sdsdd"  ASSIGNED TO AN: EPM7064STC44-10
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+TDI                          : 1         : input  : TTL               :         :           : Y              
+CLK_TDC                      : 2         : output : TTL               :         :           : Y              
+pin_name2                    : 3         : output : TTL               :         :           : N              
+GND                          : 4         : gnd    :                   :         :           :                
+STOP                         : 5         : output : TTL               :         :           : Y              
+pin_name1                    : 6         : output : TTL               :         :           : N              
+TMS                          : 7         : input  : TTL               :         :           : Y              
+Start_TDC                    : 8         : output : TTL               :         :           : Y              
+VCC                          : 9         : power  :                   :         :           :                
+RESERVED                     : 10        :        :                   :         :           :                
+reset_all                    : 11        : output : TTL               :         :           : Y              
+_20MHz                       : 12        : input  : TTL               :         :           : Y              
+tff                          : 13        : output : TTL               :         :           : N              
+fs                           : 14        : output : TTL               :         :           : N              
+pin_name3                    : 15        : output : TTL               :         :           : N              
+GND                          : 16        : gnd    :                   :         :           :                
+VCC                          : 17        : power  :                   :         :           :                
+_2mks                        : 18        : output : TTL               :         :           : Y              
+_5mks                        : 19        : output : TTL               :         :           : Y              
+_50mks                       : 20        : output : TTL               :         :           : Y              
+STROB1                       : 21        : output : TTL               :         :           : Y              
+Strob_reverse                : 22        : output : TTL               :         :           : Y              
+Comp0                        : 23        : input  : TTL               :         :           : Y              
+GND                          : 24        : gnd    :                   :         :           :                
+Comp_min2                    : 25        : input  : TTL               :         :           : Y              
+TCK                          : 26        : input  : TTL               :         :           : Y              
+pin91                        : 27        : output : TTL               :         :           : N              
+pin                          : 28        : output : TTL               :         :           : N              
+VCC                          : 29        : power  :                   :         :           :                
+tff49                        : 30        : output : TTL               :         :           : N              
+Comp_min1                    : 31        : input  : TTL               :         :           : Y              
+TDO                          : 32        : output : TTL               :         :           : Y              
+Comp_plus                    : 33        : input  : TTL               :         :           : Y              
+sum                          : 34        : output : TTL               :         :           : Y              
+stop_plus                    : 35        : output : TTL               :         :           : N              
+GND                          : 36        : gnd    :                   :         :           :                
+GND+                         : 37        :        :                   :         :           :                
+GND+                         : 38        :        :                   :         :           :                
+GND+                         : 39        :        :                   :         :           :                
+GND+                         : 40        :        :                   :         :           :                
+VCC                          : 41        : power  :                   :         :           :                
+stop_minus                   : 42        : output : TTL               :         :           : N              
+STROB                        : 43        : input  : TTL               :         :           : Y              
+EnStop                       : 44        : input  : TTL               :         :           : Y              

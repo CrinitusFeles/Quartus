@@ -1,0 +1,1880 @@
+Fitter report for sdsdd
+Thu Mar 29 13:22:59 2018
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. All Package Pins
+ 10. Output Pin Default Load For Reported TCO
+ 11. Fitter Resource Utilization by Entity
+ 12. Control Signals
+ 13. Non-Global High Fan-Out Signals
+ 14. Other Routing Usage Summary
+ 15. LAB Macrocells
+ 16. Shareable Expander
+ 17. Logic Cell Interconnection
+ 18. Fitter Device Options
+ 19. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; Fitter Summary                                                         ;
++---------------------------+--------------------------------------------+
+; Fitter Status             ; Successful - Thu Mar 29 13:22:59 2018      ;
+; Quartus II 32-bit Version ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name             ; sdsdd                                      ;
+; Top-level Entity Name     ; sdsdd                                      ;
+; Family                    ; MAX7000S                                   ;
+; Device                    ; EPM7064STC44-10                            ;
+; Timing Models             ; Final                                      ;
+; Total macrocells          ; 64 / 64 ( 100 % )                          ;
+; Total pins                ; 31 / 36 ( 86 % )                           ;
++---------------------------+--------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Fitter Settings                                                                ;
++--------------------------------------------------------------------------------+
+Option        : Device
+Setting       : EPM7064STC44-10
+Default Value : 
+
+Option        : Use smart compilation
+Setting       : Off
+Default Value : Off
+
+Option        : Enable parallel Assembler and TimeQuest Timing Analyzer during compilation
+Setting       : On
+Default Value : On
+
+Option        : Enable compact report table
+Setting       : Off
+Default Value : Off
+
+Option        : Optimize Multi-Corner Timing
+Setting       : Off
+Default Value : Off
+
+Option        : Optimize Timing for ECOs
+Setting       : Off
+Default Value : Off
+
+Option        : Regenerate full fit report during ECO compiles
+Setting       : Off
+Default Value : Off
+
+Option        : Optimize IOC Register Placement for Timing
+Setting       : Normal
+Default Value : Normal
+
+Option        : Limit to One Fitting Attempt
+Setting       : Off
+Default Value : Off
+
+Option        : Fitter Initial Placement Seed
+Setting       : 1
+Default Value : 1
+
+Option        : Slow Slew Rate
+Setting       : Off
+Default Value : Off
+
+Option        : Fitter Effort
+Setting       : Auto Fit
+Default Value : Auto Fit
+
+Option        : Force Fitter to Avoid Periphery Placement Warnings
+Setting       : Off
+Default Value : Off
++--------------------------------------------------------------------------------+
+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in E:/Quartus_13.0/Projects/In Production_08_02/output_files/sdsdd.pin.
+
+
++--------------------------------------------------+
+; Fitter Resource Usage Summary                    ;
++------------------------------+-------------------+
+; Resource                     ; Usage             ;
++------------------------------+-------------------+
+; Logic cells                  ; 64 / 64 ( 100 % ) ;
+; Registers                    ; 57 / 64 ( 89 % )  ;
+; Number of pterms used        ; 176               ;
+; I/O pins                     ; 31 / 36 ( 86 % )  ;
+;     -- Clock pins            ; 0 / 2 ( 0 % )     ;
+;     -- Dedicated input pins  ; 0 / 2 ( 0 % )     ;
+;                              ;                   ;
+; Global signals               ; 0                 ;
+; Shareable expanders          ; 9 / 64 ( 14 % )   ;
+; Parallel expanders           ; 0 / 60 ( 0 % )    ;
+; Cells using turbo bit        ; 64 / 64 ( 100 % ) ;
+; Maximum fan-out              ; 36                ;
+; Highest non-global fan-out   ; 36                ;
+; Total fan-out                ; 402               ;
+; Average fan-out              ; 3.87              ;
++------------------------------+-------------------+
+
+
++--------------------------------------------------------------------------------+
+; Input Pins                                                                     ;
++--------------------------------------------------------------------------------+
+Name                  : Comp0
+Pin #                 : 23
+I/O Bank              : --
+LAB                   : 3
+Combinational Fan-Out : 2
+Registered Fan-Out    : 0
+Global                : no
+Input Register        : no
+I/O Standard          : TTL
+Location assigned by  : User
+
+Name                  : Comp_min1
+Pin #                 : 31
+I/O Bank              : --
+LAB                   : 4
+Combinational Fan-Out : 3
+Registered Fan-Out    : 0
+Global                : no
+Input Register        : no
+I/O Standard          : TTL
+Location assigned by  : User
+
+Name                  : Comp_min2
+Pin #                 : 25
+I/O Bank              : --
+LAB                   : 3
+Combinational Fan-Out : 1
+Registered Fan-Out    : 0
+Global                : no
+Input Register        : no
+I/O Standard          : TTL
+Location assigned by  : User
+
+Name                  : Comp_plus
+Pin #                 : 33
+I/O Bank              : --
+LAB                   : 4
+Combinational Fan-Out : 1
+Registered Fan-Out    : 0
+Global                : no
+Input Register        : no
+I/O Standard          : TTL
+Location assigned by  : User
+
+Name                  : EnStop
+Pin #                 : 44
+I/O Bank              : --
+LAB                   : 1
+Combinational Fan-Out : 18
+Registered Fan-Out    : 0
+Global                : no
+Input Register        : no
+I/O Standard          : TTL
+Location assigned by  : User
+
+Name                  : STROB
+Pin #                 : 43
+I/O Bank              : --
+LAB                   : 1
+Combinational Fan-Out : 4
+Registered Fan-Out    : 0
+Global                : no
+Input Register        : no
+I/O Standard          : TTL
+Location assigned by  : User
+
+Name                  : _20MHz
+Pin #                 : 12
+I/O Bank              : --
+LAB                   : 2
+Combinational Fan-Out : 36
+Registered Fan-Out    : 0
+Global                : no
+Input Register        : no
+I/O Standard          : TTL
+Location assigned by  : User
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Output Pins                                                                    ;
++--------------------------------------------------------------------------------+
+Name                 : CLK_TDC
+Pin #                : 2
+I/O Bank             : --
+LAB                  : 1
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : User
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : STOP
+Pin #                : 5
+I/O Bank             : --
+LAB                  : 1
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : User
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : STROB1
+Pin #                : 21
+I/O Bank             : --
+LAB                  : 3
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : User
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : Start_TDC
+Pin #                : 8
+I/O Bank             : --
+LAB                  : 2
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : User
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : Strob_reverse
+Pin #                : 22
+I/O Bank             : --
+LAB                  : 3
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : User
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : _2mks
+Pin #                : 18
+I/O Bank             : --
+LAB                  : 3
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : User
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : _50mks
+Pin #                : 20
+I/O Bank             : --
+LAB                  : 3
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : User
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : _5mks
+Pin #                : 19
+I/O Bank             : --
+LAB                  : 3
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : User
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : fs
+Pin #                : 14
+I/O Bank             : --
+LAB                  : 2
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : Fitter
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : pin
+Pin #                : 28
+I/O Bank             : --
+LAB                  : 4
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : Fitter
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : pin91
+Pin #                : 27
+I/O Bank             : --
+LAB                  : 4
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : Fitter
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : pin_name1
+Pin #                : 6
+I/O Bank             : --
+LAB                  : 1
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : Fitter
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : pin_name2
+Pin #                : 3
+I/O Bank             : --
+LAB                  : 1
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : Fitter
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : pin_name3
+Pin #                : 15
+I/O Bank             : --
+LAB                  : 2
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : Fitter
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : reset_all
+Pin #                : 11
+I/O Bank             : --
+LAB                  : 2
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : User
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : stop_minus
+Pin #                : 42
+I/O Bank             : --
+LAB                  : 1
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : Fitter
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : stop_plus
+Pin #                : 35
+I/O Bank             : --
+LAB                  : 4
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : Fitter
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : sum
+Pin #                : 34
+I/O Bank             : --
+LAB                  : 4
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : User
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : tff
+Pin #                : 13
+I/O Bank             : --
+LAB                  : 2
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : Fitter
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
+
+Name                 : tff49
+Pin #                : 30
+I/O Bank             : --
+LAB                  : 4
+Output Register      : no
+Slow Slew Rate       : no
+Open Drain           : no
+TRI Primitive        : no
+I/O Standard         : TTL
+Location assigned by : Fitter
+Load                 : 10 pF
+Output Enable Source : -
+Output Enable Group  : -
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; All Package Pins                                                               ;
++--------------------------------------------------------------------------------+
+Location        : 1
+Pad Number      : 6
+I/O Bank        : --
+Pin Name/Usage  : TDI
+Dir.            : input
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 2
+Pad Number      : 7
+I/O Bank        : --
+Pin Name/Usage  : CLK_TDC
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 3
+Pad Number      : 8
+I/O Bank        : --
+Pin Name/Usage  : pin_name2
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : N
+
+Location        : 4
+Pad Number      : 9
+I/O Bank        : --
+Pin Name/Usage  : GND
+Dir.            : gnd
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 5
+Pad Number      : 10
+I/O Bank        : --
+Pin Name/Usage  : STOP
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 6
+Pad Number      : 11
+I/O Bank        : --
+Pin Name/Usage  : pin_name1
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : N
+
+Location        : 7
+Pad Number      : 12
+I/O Bank        : --
+Pin Name/Usage  : TMS
+Dir.            : input
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 8
+Pad Number      : 13
+I/O Bank        : --
+Pin Name/Usage  : Start_TDC
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 9
+Pad Number      : 14
+I/O Bank        : --
+Pin Name/Usage  : VCC
+Dir.            : power
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 10
+Pad Number      : 15
+I/O Bank        : --
+Pin Name/Usage  : RESERVED
+Dir.            : 
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 11
+Pad Number      : 16
+I/O Bank        : --
+Pin Name/Usage  : reset_all
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 12
+Pad Number      : 17
+I/O Bank        : --
+Pin Name/Usage  : _20MHz
+Dir.            : input
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 13
+Pad Number      : 18
+I/O Bank        : --
+Pin Name/Usage  : tff
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : N
+
+Location        : 14
+Pad Number      : 19
+I/O Bank        : --
+Pin Name/Usage  : fs
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : N
+
+Location        : 15
+Pad Number      : 20
+I/O Bank        : --
+Pin Name/Usage  : pin_name3
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : N
+
+Location        : 16
+Pad Number      : 21
+I/O Bank        : --
+Pin Name/Usage  : GND
+Dir.            : gnd
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 17
+Pad Number      : 22
+I/O Bank        : --
+Pin Name/Usage  : VCC
+Dir.            : power
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 18
+Pad Number      : 23
+I/O Bank        : --
+Pin Name/Usage  : _2mks
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 19
+Pad Number      : 24
+I/O Bank        : --
+Pin Name/Usage  : _5mks
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 20
+Pad Number      : 25
+I/O Bank        : --
+Pin Name/Usage  : _50mks
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 21
+Pad Number      : 26
+I/O Bank        : --
+Pin Name/Usage  : STROB1
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 22
+Pad Number      : 27
+I/O Bank        : --
+Pin Name/Usage  : Strob_reverse
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 23
+Pad Number      : 28
+I/O Bank        : --
+Pin Name/Usage  : Comp0
+Dir.            : input
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 24
+Pad Number      : 29
+I/O Bank        : --
+Pin Name/Usage  : GND
+Dir.            : gnd
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 25
+Pad Number      : 30
+I/O Bank        : --
+Pin Name/Usage  : Comp_min2
+Dir.            : input
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 26
+Pad Number      : 31
+I/O Bank        : --
+Pin Name/Usage  : TCK
+Dir.            : input
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 27
+Pad Number      : 32
+I/O Bank        : --
+Pin Name/Usage  : pin91
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : N
+
+Location        : 28
+Pad Number      : 33
+I/O Bank        : --
+Pin Name/Usage  : pin
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : N
+
+Location        : 29
+Pad Number      : 34
+I/O Bank        : --
+Pin Name/Usage  : VCC
+Dir.            : power
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 30
+Pad Number      : 35
+I/O Bank        : --
+Pin Name/Usage  : tff49
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : N
+
+Location        : 31
+Pad Number      : 36
+I/O Bank        : --
+Pin Name/Usage  : Comp_min1
+Dir.            : input
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 32
+Pad Number      : 37
+I/O Bank        : --
+Pin Name/Usage  : TDO
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 33
+Pad Number      : 38
+I/O Bank        : --
+Pin Name/Usage  : Comp_plus
+Dir.            : input
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 34
+Pad Number      : 39
+I/O Bank        : --
+Pin Name/Usage  : sum
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 35
+Pad Number      : 40
+I/O Bank        : --
+Pin Name/Usage  : stop_plus
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : N
+
+Location        : 36
+Pad Number      : 41
+I/O Bank        : --
+Pin Name/Usage  : GND
+Dir.            : gnd
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 37
+Pad Number      : 42
+I/O Bank        : --
+Pin Name/Usage  : GND+
+Dir.            : 
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 38
+Pad Number      : 43
+I/O Bank        : --
+Pin Name/Usage  : GND+
+Dir.            : 
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 39
+Pad Number      : 0
+I/O Bank        : --
+Pin Name/Usage  : GND+
+Dir.            : 
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 40
+Pad Number      : 1
+I/O Bank        : --
+Pin Name/Usage  : GND+
+Dir.            : 
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 41
+Pad Number      : 2
+I/O Bank        : --
+Pin Name/Usage  : VCC
+Dir.            : power
+I/O Standard    : 
+Voltage         : 
+User Assignment : 
+
+Location        : 42
+Pad Number      : 3
+I/O Bank        : --
+Pin Name/Usage  : stop_minus
+Dir.            : output
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : N
+
+Location        : 43
+Pad Number      : 4
+I/O Bank        : --
+Pin Name/Usage  : STROB
+Dir.            : input
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
+
+Location        : 44
+Pad Number      : 5
+I/O Bank        : --
+Pin Name/Usage  : EnStop
+Dir.            : input
+I/O Standard    : TTL
+Voltage         : 
+User Assignment : Y
++--------------------------------------------------------------------------------+
+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++--------------------------------------------------------------------------------+
+; Output Pin Default Load For Reported TCO                                       ;
++--------------------------------------------------------------------------------+
+I/O Standard           : TTL
+Load                   : 10 pF
+Termination Resistance : Not Available
++--------------------------------------------------------------------------------+
+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++--------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                          ;
++--------------------------------------------------------------------------------+
+Compilation Hierarchy Node : |sdsdd
+Macrocells                 : 64
+Pins                       : 31
+Full Hierarchy Name        : |sdsdd
+Library Name               : work
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Control Signals                                                                ;
++--------------------------------------------------------------------------------+
+Name                 : Comp0
+Location             : PIN_23
+Fan-Out              : 2
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : Comp_min1
+Location             : PIN_31
+Fan-Out              : 3
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : Comp_min2
+Location             : PIN_25
+Fan-Out              : 1
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : Comp_plus
+Location             : PIN_33
+Fan-Out              : 1
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : EnStop
+Location             : PIN_44
+Fan-Out              : 18
+Usage                : Async. clear, Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : STROB
+Location             : PIN_43
+Fan-Out              : 4
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : _20MHz
+Location             : PIN_12
+Fan-Out              : 36
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : dssdfsf110
+Location             : LC25
+Fan-Out              : 1
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : dssdfsf92
+Location             : LC20
+Fan-Out              : 3
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : fddf2
+Location             : LC49
+Fan-Out              : 5
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : fddf3
+Location             : LC63
+Fan-Out              : 4
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : fddf3sd
+Location             : LC51
+Fan-Out              : 2
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : fddf3sd107
+Location             : LC29
+Fan-Out              : 1
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : fddf68ghhg
+Location             : LC59
+Fan-Out              : 1
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : fddfsfff
+Location             : LC52
+Fan-Out              : 2
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : fddfsfff108
+Location             : LC26
+Fan-Out              : 2
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : fddfssd9
+Location             : LC4
+Fan-Out              : 6
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst103
+Location             : LC28
+Fan-Out              : 7
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst112
+Location             : LC7
+Fan-Out              : 5
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst116
+Location             : LC10
+Fan-Out              : 5
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst118
+Location             : LC13
+Fan-Out              : 5
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst119
+Location             : LC14
+Fan-Out              : 5
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst123
+Location             : LC3
+Fan-Out              : 5
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst13~4
+Location             : SEXP1
+Fan-Out              : 1
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst17
+Location             : LC9
+Fan-Out              : 8
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst18
+Location             : LC8
+Fan-Out              : 8
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst19
+Location             : LC43
+Fan-Out              : 8
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst20
+Location             : LC44
+Fan-Out              : 8
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst21
+Location             : LC34
+Fan-Out              : 8
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst23
+Location             : LC50
+Fan-Out              : 7
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst27
+Location             : LC35
+Fan-Out              : 10
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst30
+Location             : LC53
+Fan-Out              : 7
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst34
+Location             : LC33
+Fan-Out              : 10
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst40
+Location             : LC57
+Fan-Out              : 7
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst41
+Location             : LC32
+Fan-Out              : 7
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst48
+Location             : LC36
+Fan-Out              : 12
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst51~13
+Location             : SEXP17
+Fan-Out              : 5
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst51~26bal
+Location             : LC15
+Fan-Out              : 2
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst51~32
+Location             : SEXP2
+Fan-Out              : 2
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst51~33
+Location             : SEXP51
+Fan-Out              : 3
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst53~0
+Location             : SEXP35
+Fan-Out              : 1
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst53~1
+Location             : SEXP34
+Fan-Out              : 1
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst56
+Location             : LC2
+Fan-Out              : 8
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst59
+Location             : LC42
+Fan-Out              : 11
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst62
+Location             : LC23
+Fan-Out              : 7
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst65
+Location             : LC41
+Fan-Out              : 11
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst73
+Location             : LC38
+Fan-Out              : 11
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst74~2
+Location             : SEXP49
+Fan-Out              : 3
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst74~3
+Location             : SEXP50
+Fan-Out              : 3
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst77dfvdfv
+Location             : LC16
+Fan-Out              : 4
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst82
+Location             : LC11
+Fan-Out              : 3
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst83
+Location             : LC6
+Fan-Out              : 3
+Usage                : Async. clear
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
+
+Name                 : inst89
+Location             : LC30
+Fan-Out              : 8
+Usage                : Clock
+Global               : no
+Global Resource Used : --
+Global Line Name     : --
++--------------------------------------------------------------------------------+
+
+
+
++---------------------------------+
+; Non-Global High Fan-Out Signals ;
++-------------------+-------------+
+; Name              ; Fan-Out     ;
++-------------------+-------------+
+; _20MHz            ; 36          ;
+; EnStop            ; 18          ;
+; inst48            ; 12          ;
+; inst65            ; 11          ;
+; inst59            ; 11          ;
+; inst73            ; 11          ;
+; inst27            ; 10          ;
+; inst34            ; 10          ;
+; inst45            ; 10          ;
+; inst38            ; 9           ;
+; instfgddd18       ; 9           ;
+; inst56            ; 8           ;
+; inst89            ; 8           ;
+; inst21            ; 8           ;
+; inst20            ; 8           ;
+; inst39            ; 8           ;
+; inst19            ; 8           ;
+; inst18            ; 8           ;
+; inst17            ; 8           ;
+; inst23            ; 7           ;
+; inst41            ; 7           ;
+; inst30            ; 7           ;
+; inst62            ; 7           ;
+; inst42            ; 7           ;
+; inst40            ; 7           ;
+; inst103           ; 7           ;
+; inst43            ; 6           ;
+; fddfssd9          ; 6           ;
+; inst123           ; 5           ;
+; fddf2             ; 5           ;
+; inst47            ; 5           ;
+; inst119           ; 5           ;
+; inst118           ; 5           ;
+; inst116           ; 5           ;
+; inst51~13         ; 5           ;
+; inst112           ; 5           ;
+; STROB             ; 4           ;
+; inst77dfvdfv      ; 4           ;
+; fddf3             ; 4           ;
+; inst25            ; 4           ;
+; inst57            ; 4           ;
+; inst51~33         ; 3           ;
+; Comp_min1         ; 3           ;
+; dssdfsf92         ; 3           ;
+; inst74~3          ; 3           ;
+; inst74~2          ; 3           ;
+; inst61            ; 3           ;
+; inst26            ; 3           ;
+; inst60            ; 3           ;
+; inst82            ; 3           ;
+; inst83            ; 3           ;
+; inst51~32         ; 2           ;
+; Comp0             ; 2           ;
+; inst51~26bal      ; 2           ;
+; inst74dgfd~12sexp ; 2           ;
+; inst77dfvdfv90    ; 2           ;
+; fddf3sd           ; 2           ;
+; fddfsfff          ; 2           ;
+; inst63            ; 2           ;
+; dssdfsf109        ; 2           ;
+; fddfsfff108       ; 2           ;
+; fddfssd           ; 2           ;
+; Comp_min2         ; 1           ;
+; Comp_plus         ; 1           ;
+; inst13~4          ; 1           ;
+; inst53~1          ; 1           ;
+; inst53~0          ; 1           ;
+; mnh42~2           ; 1           ;
+; inst134~1         ; 1           ;
+; nnh               ; 1           ;
+; fddf68ghhg        ; 1           ;
+; inst22            ; 1           ;
+; inst64~0          ; 1           ;
+; dssdfsf110        ; 1           ;
+; fddf3sd107        ; 1           ;
+; inst51~20         ; 1           ;
+; inst51~15         ; 1           ;
+; inst31            ; 1           ;
+; inst85            ; 1           ;
+; _20MHz~1          ; 1           ;
++-------------------+-------------+
+
+
++-------------------------------------------------+
+; Other Routing Usage Summary                     ;
++-----------------------------+-------------------+
+; Other Routing Resource Type ; Usage             ;
++-----------------------------+-------------------+
+; Output enables              ; 0 / 6 ( 0 % )     ;
+; PIA buffers                 ; 99 / 144 ( 69 % ) ;
++-----------------------------+-------------------+
+
+
++-----------------------------------------------------------------------+
+; LAB Macrocells                                                        ;
++-----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 16.00) ; Number of LABs  (Total = 4) ;
++-----------------------------------------+-----------------------------+
+; 0                                       ; 0                           ;
+; 1                                       ; 0                           ;
+; 2                                       ; 0                           ;
+; 3                                       ; 0                           ;
+; 4                                       ; 0                           ;
+; 5                                       ; 0                           ;
+; 6                                       ; 0                           ;
+; 7                                       ; 0                           ;
+; 8                                       ; 0                           ;
+; 9                                       ; 0                           ;
+; 10                                      ; 0                           ;
+; 11                                      ; 0                           ;
+; 12                                      ; 0                           ;
+; 13                                      ; 0                           ;
+; 14                                      ; 0                           ;
+; 15                                      ; 0                           ;
+; 16                                      ; 4                           ;
++-----------------------------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Shareable Expander                                                            ;
++-------------------------------------------------+-----------------------------+
+; Number of shareable expanders  (Average = 2.25) ; Number of LABs  (Total = 4) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 0                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 1                           ;
+; 3                                               ; 2                           ;
++-------------------------------------------------+-----------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                     ;
++--------------------------------------------------------------------------------+
+LAB        :  A
+Logic Cell : LC5
+Input      : _20MHz
+Output     : CLK_TDC
+
+LAB        :  A
+Logic Cell : LC9
+Input      : inst27, _20MHz, inst56, inst21, inst20, inst19, inst17, inst18
+Output     : inst17, inst18, inst19, inst20, inst21, inst22, inst56, inst74dgfd~12sexp
+
+LAB        :  A
+Logic Cell : LC6
+Input      : inst82, _20MHz, inst77dfvdfv, inst83
+Output     : inst83, inst82, inst77dfvdfv
+
+LAB        :  A
+Logic Cell : LC7
+Input      : inst123, _20MHz, inst119, inst118, inst112, inst116
+Output     : inst112, inst116, inst118, inst119, inst123
+
+LAB        :  A
+Logic Cell : LC8
+Input      : inst17, inst27, _20MHz, inst56, inst21, inst20, inst19, inst18
+Output     : inst17, inst18, inst19, inst20, inst21, inst22, inst56, inst74dgfd~12sexp
+
+LAB        :  A
+Logic Cell : LC11
+Input      : inst77dfvdfv, _20MHz, inst82, inst83
+Output     : inst83, inst82, inst77dfvdfv
+
+LAB        :  A
+Logic Cell : LC10
+Input      : inst112, _20MHz, inst123, inst119, inst118, inst116
+Output     : inst112, inst116, inst118, inst119, inst123
+
+LAB        :  A
+Logic Cell : LC14
+Input      : inst118, inst112, inst116, _20MHz, inst123, inst119
+Output     : inst112, inst116, inst118, inst119, inst123
+
+LAB        :  A
+Logic Cell : LC1
+Input      : fddf3, EnStop, inst51~32
+Output     : pin_name1, fddfssd9
+
+LAB        :  A
+Logic Cell : LC12
+Input      : inst21, inst20, inst19, inst17, inst18, inst27, _20MHz, inst56
+Output     : inst56
+
+LAB        :  A
+Logic Cell : LC13
+Input      : inst112, inst116, _20MHz, inst123, inst119, inst118
+Output     : inst112, inst116, inst118, inst119, inst123
+
+LAB        :  A
+Logic Cell : LC4
+Input      : fddfssd, fddf3, EnStop, inst51~32
+Output     : pin_name2, inst34, inst74~2, inst74~3, mnh42~2, fddfsfff
+
+LAB        :  A
+Logic Cell : LC2
+Input      : inst22, inst21, inst20, inst19, inst17, inst18, inst27, _20MHz, inst56
+Output     : inst17, inst18, inst19, inst20, inst21, inst22, inst56, inst74dgfd~12sexp
+
+LAB        :  A
+Logic Cell : LC15
+Input      : EnStop, inst45, instfgddd18
+Output     : inst89, inst123
+
+LAB        :  A
+Logic Cell : LC16
+Input      : fddf3, inst82, inst83
+Output     : inst83, inst82, stop_minus, inst13~4
+
+LAB        :  A
+Logic Cell : LC3
+Input      : inst51~26bal, inst13~4, inst119, inst118, inst112, inst116
+Output     : inst112, inst116, inst118, inst119, STOP
+
+LAB        :  B
+Logic Cell : LC18
+Input      : STROB, EnStop
+Output     : instfgddd18, inst51~13, inst51~15, inst51~20, inst64~0, inst74~2, inst53~0, inst51~26bal, inst51~32, inst51~33
+
+LAB        :  B
+Logic Cell : LC21
+Input      : inst45, EnStop, inst51~13
+Output     : inst51~13, inst51~15, inst51~20, inst64~0, inst74~2, inst53~0, inst51~26bal, inst51~32, inst51~33
+
+LAB        :  B
+Logic Cell : LC17
+Input      : inst45, instfgddd18, EnStop, dssdfsf109
+Output     : pin_name3
+
+LAB        :  B
+Logic Cell : LC27
+Input      : inst62, inst41, inst57, inst60, _20MHz, inst89, inst103
+Output     : inst103
+
+LAB        :  B
+Logic Cell : LC32
+Input      : inst89, _20MHz, inst41, inst62, inst103
+Output     : inst85, inst103, inst57, inst60, inst62, inst41, inst89
+
+LAB        :  B
+Logic Cell : LC25
+Input      : fddfsfff108, fddf3sd107, EnStop, inst51~13
+Output     : dssdfsf109
+
+LAB        :  B
+Logic Cell : LC28
+Input      : inst62, inst41, inst57, inst60, inst85, _20MHz, inst89, inst103
+Output     : inst85, inst103, inst57, inst60, inst62, inst41, inst89
+
+LAB        :  B
+Logic Cell : LC30
+Input      : inst51~26bal, inst41, inst62, inst103
+Output     : inst85, inst103, inst57, inst60, inst62, inst41, Start_TDC, inst48
+
+LAB        :  B
+Logic Cell : LC26
+Input      : STROB, Comp_min1, EnStop, inst51~13
+Output     : fddf3sd107, dssdfsf110
+
+LAB        :  B
+Logic Cell : LC24
+Input      : inst45, instfgddd18, EnStop
+Output     : reset_all
+
+LAB        :  B
+Logic Cell : LC22
+Input      : inst41, inst57, _20MHz, inst89, inst62, inst103
+Output     : inst85, inst103, inst62
+
+LAB        :  B
+Logic Cell : LC31
+Input      : inst41, _20MHz, inst89, inst62, inst103
+Output     : inst85, inst103, inst60, inst62
+
+LAB        :  B
+Logic Cell : LC19
+Input      : STROB, Comp_min1, dssdfsf110
+Output     : fs, inst64~0
+
+LAB        :  B
+Logic Cell : LC29
+Input      : fddfsfff108, STROB, Comp_min1, EnStop, inst51~13
+Output     : dssdfsf110
+
+LAB        :  B
+Logic Cell : LC23
+Input      : inst41, inst57, inst60, _20MHz, inst89, inst62, inst103
+Output     : inst85, inst103, inst57, inst60, inst62, inst41, inst89
+
+LAB        :  B
+Logic Cell : LC20
+Input      : fddfsfff, EnStop, inst51~13
+Output     : tff, fddf3sd, inst77dfvdfv90
+
+LAB        :  C
+Logic Cell : LC46
+Input      : inst38, inst39, inst42, inst43, inst47, inst59, inst61, _20MHz, inst48, inst65, inst73
+Output     : inst73, inst65
+
+LAB        :  C
+Logic Cell : LC48
+Input      : inst38, inst39, _20MHz, inst48, inst65, inst59, inst73
+Output     : inst73, inst59, inst43, inst47, inst61, inst63, inst65
+
+LAB        :  C
+Logic Cell : LC34
+Input      : inst20, inst19, inst17, inst18, inst27, _20MHz, inst56, inst21
+Output     : inst17, inst18, inst19, inst20, inst21, inst22, inst56, inst74dgfd~12sexp
+
+LAB        :  C
+Logic Cell : LC45
+Input      : inst38, inst39, inst42, _20MHz, inst48, inst65, inst59, inst73
+Output     : inst73, inst59, inst47, inst61, inst63, inst65
+
+LAB        :  C
+Logic Cell : LC39
+Input      : inst38, inst39, inst42, inst43, _20MHz, inst48, inst65, inst59, inst73
+Output     : inst73, inst59, inst61, inst63, inst65
+
+LAB        :  C
+Logic Cell : LC33
+Input      : fddfssd9, inst23, inst30, inst40
+Output     : inst31, inst40, inst25, inst26, inst30, inst23, _2mks, inst134~1, mnh42~2, fddfsfff
+
+LAB        :  C
+Logic Cell : LC38
+Input      : inst65, inst38, inst39, inst42, inst43, inst47, inst59, inst61, inst63, _20MHz, inst48, inst73
+Output     : inst73, inst59, inst38, inst39, inst42, inst43, inst47, inst61, inst63, inst65, inst48
+
+LAB        :  C
+Logic Cell : LC47
+Input      : inst38, inst39, inst42, inst43, inst47, inst59, _20MHz, inst48, inst65, inst73
+Output     : inst73, inst63, inst65
+
+LAB        :  C
+Logic Cell : LC37
+Input      : inst45, instfgddd18, EnStop
+Output     : STROB1
+
+LAB        :  C
+Logic Cell : LC41
+Input      : inst38, inst39, inst42, inst43, inst47, inst59, inst61, inst63, _20MHz, inst48, inst65, inst73
+Output     : inst73, inst59, inst38, inst39, inst42, inst43, inst47, inst61, inst63, inst65, inst48
+
+LAB        :  C
+Logic Cell : LC36
+Input      : inst89, inst65, inst59, inst73
+Output     : inst73, inst59, inst38, inst39, inst42, inst43, inst47, inst61, inst63, inst65, fddf68ghhg, _50mks
+
+LAB        :  C
+Logic Cell : LC40
+Input      : fddfssd9, fddf2, inst34
+Output     : Strob_reverse
+
+LAB        :  C
+Logic Cell : LC35
+Input      : fddf3, inst53~0, inst53~1
+Output     : inst17, inst18, inst19, inst20, inst21, inst22, inst56, inst74~2, inst74~3, _5mks
+
+LAB        :  C
+Logic Cell : LC42
+Input      : inst38, inst39, inst42, inst43, inst47, _20MHz, inst48, inst65, inst59, inst73
+Output     : inst73, inst59, inst38, inst39, inst42, inst43, inst47, inst61, inst63, inst65, inst48
+
+LAB        :  C
+Logic Cell : LC43
+Input      : inst17, inst18, inst27, _20MHz, inst56, inst21, inst20, inst19
+Output     : inst17, inst18, inst19, inst20, inst21, inst22, inst56, inst74dgfd~12sexp
+
+LAB        :  C
+Logic Cell : LC44
+Input      : inst19, inst17, inst18, inst27, _20MHz, inst56, inst21, inst20
+Output     : inst17, inst18, inst19, inst20, inst21, inst22, inst56, inst74dgfd~12sexp
+
+LAB        :  D
+Logic Cell : LC50
+Input      : inst34, _20MHz, inst23, inst30, inst40
+Output     : inst31, inst40, inst25, inst26, inst30, inst23, inst34
+
+LAB        :  D
+Logic Cell : LC55
+Input      : inst38, _20MHz, inst48, inst65, inst59, inst73
+Output     : inst73, inst59, inst42, inst43, inst47, inst61, inst63, inst65
+
+LAB        :  D
+Logic Cell : LC59
+Input      : inst48, EnStop, inst51~33
+Output     : fddf2
+
+LAB        :  D
+Logic Cell : LC49
+Input      : EnStop, fddf68ghhg, Comp_plus, inst74~2, inst74~3
+Output     : nnh, pin91, inst134~1, mnh42~2, fddfsfff
+
+LAB        :  D
+Logic Cell : LC56
+Input      : fddf2, inst74~2, inst74~3
+Output     : fddf3
+
+LAB        :  D
+Logic Cell : LC62
+Input      : fddf2, inst34
+Output     : sum
+
+LAB        :  D
+Logic Cell : LC57
+Input      : inst30, inst23, inst25, inst26, inst31, _20MHz, inst34, inst40
+Output     : inst31, inst40, inst25, inst26, inst30, inst23, inst34
+
+LAB        :  D
+Logic Cell : LC54
+Input      : inst30, inst23, inst25, inst26, _20MHz, inst34, inst40
+Output     : inst40
+
+LAB        :  D
+Logic Cell : LC53
+Input      : inst23, inst25, inst26, _20MHz, inst34, inst30, inst40
+Output     : inst31, inst40, inst25, inst26, inst30, inst23, inst34
+
+LAB        :  D
+Logic Cell : LC61
+Input      : inst23, inst25, _20MHz, inst34, inst30, inst40
+Output     : inst31, inst40, inst30
+
+LAB        :  D
+Logic Cell : LC52
+Input      : fddfssd9, fddf2, inst34, Comp_min2, EnStop, inst51~33
+Output     : dssdfsf92, tff49
+
+LAB        :  D
+Logic Cell : LC58
+Input      : inst48, _20MHz, inst65, inst59, inst73
+Output     : inst73, inst59, inst39, inst42, inst43, inst47, inst61, inst63, inst65
+
+LAB        :  D
+Logic Cell : LC51
+Input      : dssdfsf92, Comp0, EnStop, inst51~33
+Output     : pin, inst77dfvdfv90
+
+LAB        :  D
+Logic Cell : LC64
+Input      : dssdfsf92, fddf3sd
+Output     : stop_plus, inst13~4
+
+LAB        :  D
+Logic Cell : LC60
+Input      : inst23, _20MHz, inst34, inst30, inst40
+Output     : inst31, inst40, inst26, inst30
+
+LAB        :  D
+Logic Cell : LC63
+Input      : nnh, Comp0, inst74~2, inst74~3
+Output     : fddfssd, fddfssd9, inst27, inst77dfvdfv
++--------------------------------------------------------------------------------+
+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (119006): Selected device EPM7064STC44-10 for design "sdsdd"
+Warning (15705): Ignored locations or region assignments to the following nodes
+    Warning (15706): Node "TCK" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "TDI" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "TDO" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "TMS" is assigned to location or region, but does not exist in design
+Info: Quartus II 32-bit Fitter was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 407 megabytes
+    Info: Processing ended: Thu Mar 29 13:22:59 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

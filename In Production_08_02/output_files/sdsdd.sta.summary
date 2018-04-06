@@ -1,0 +1,377 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'inst48'
+Slack : -9.500
+TNS   : -96.500
+
+Type  : Setup 'inst27'
+Slack : -9.500
+TNS   : -66.500
+
+Type  : Setup 'inst34'
+Slack : -9.500
+TNS   : -57.000
+
+Type  : Setup 'inst89'
+Slack : -9.500
+TNS   : -57.000
+
+Type  : Setup 'inst123'
+Slack : -9.500
+TNS   : -38.000
+
+Type  : Setup 'inst77dfvdfv'
+Slack : -9.500
+TNS   : -19.000
+
+Type  : Setup 'EnStop'
+Slack : -9.500
+TNS   : -10.500
+
+Type  : Setup '_20MHz'
+Slack : -9.000
+TNS   : -315.000
+
+Type  : Setup 'fddf3'
+Slack : -9.000
+TNS   : -18.000
+
+Type  : Setup 'Comp0'
+Slack : -9.000
+TNS   : -17.500
+
+Type  : Setup 'STROB'
+Slack : -9.000
+TNS   : -11.000
+
+Type  : Setup 'fddf68ghhg'
+Slack : -1.500
+TNS   : -1.500
+
+Type  : Setup 'Comp_min1'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Setup 'Comp_min2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Setup 'Comp_plus'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Hold '_20MHz'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Hold 'Comp0'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Hold 'Comp_min1'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Hold 'STROB'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Hold 'Comp_min2'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Hold 'Comp_plus'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Hold 'EnStop'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Hold 'inst48'
+Slack : -3.000
+TNS   : -6.000
+
+Type  : Hold 'fddf3'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Hold 'fddf68ghhg'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Hold 'inst123'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Hold 'inst27'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Hold 'inst34'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Hold 'inst77dfvdfv'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Hold 'inst89'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Recovery 'fddf3'
+Slack : -23.000
+TNS   : -71.500
+
+Type  : Recovery 'inst48'
+Slack : -18.000
+TNS   : -143.000
+
+Type  : Recovery 'fddf2'
+Slack : -18.000
+TNS   : -18.000
+
+Type  : Recovery 'fddf3sd107'
+Slack : -18.000
+TNS   : -18.000
+
+Type  : Recovery 'fddf68ghhg'
+Slack : -18.000
+TNS   : -18.000
+
+Type  : Recovery 'fddfsfff'
+Slack : -18.000
+TNS   : -18.000
+
+Type  : Recovery 'fddfsfff108'
+Slack : -18.000
+TNS   : -18.000
+
+Type  : Recovery 'STROB'
+Slack : -17.500
+TNS   : -51.000
+
+Type  : Recovery 'Comp_min1'
+Slack : -17.500
+TNS   : -46.500
+
+Type  : Recovery 'EnStop'
+Slack : -17.500
+TNS   : -44.000
+
+Type  : Recovery 'Comp0'
+Slack : -17.500
+TNS   : -35.000
+
+Type  : Recovery 'Comp_min2'
+Slack : -17.500
+TNS   : -17.500
+
+Type  : Recovery 'Comp_plus'
+Slack : -17.500
+TNS   : -17.500
+
+Type  : Recovery 'inst27'
+Slack : -12.500
+TNS   : -87.500
+
+Type  : Recovery 'inst89'
+Slack : -12.500
+TNS   : -87.500
+
+Type  : Recovery 'inst34'
+Slack : -12.500
+TNS   : -75.000
+
+Type  : Recovery 'inst123'
+Slack : -12.500
+TNS   : -50.000
+
+Type  : Recovery 'inst77dfvdfv'
+Slack : -12.500
+TNS   : -33.000
+
+Type  : Recovery 'dssdfsf92'
+Slack : -12.500
+TNS   : -12.500
+
+Type  : Recovery 'fddfssd9'
+Slack : -12.500
+TNS   : -12.500
+
+Type  : Recovery '_20MHz'
+Slack : -12.000
+TNS   : -420.000
+
+Type  : Removal 'Comp0'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Removal 'Comp_min1'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Removal 'Comp_min2'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Removal 'EnStop'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Removal 'STROB'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Removal 'fddf3'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Removal 'fddf3sd107'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Removal 'fddfsfff'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Removal 'fddfsfff108'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Removal 'inst48'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Removal 'inst77dfvdfv'
+Slack : 3.500
+TNS   : 0.000
+
+Type  : Removal 'Comp_plus'
+Slack : 4.500
+TNS   : 0.000
+
+Type  : Removal 'fddf2'
+Slack : 5.000
+TNS   : 0.000
+
+Type  : Removal 'fddf68ghhg'
+Slack : 5.000
+TNS   : 0.000
+
+Type  : Removal '_20MHz'
+Slack : 7.500
+TNS   : 0.000
+
+Type  : Removal 'fddfssd9'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'inst123'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'inst27'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'inst34'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'inst89'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'dssdfsf92'
+Slack : 8.500
+TNS   : 0.000
+
+Type  : Minimum Pulse Width '_20MHz'
+Slack : -3.500
+TNS   : -245.000
+
+Type  : Minimum Pulse Width 'inst48'
+Slack : -3.500
+TNS   : -77.000
+
+Type  : Minimum Pulse Width 'inst27'
+Slack : -3.500
+TNS   : -49.000
+
+Type  : Minimum Pulse Width 'inst89'
+Slack : -3.500
+TNS   : -49.000
+
+Type  : Minimum Pulse Width 'inst34'
+Slack : -3.500
+TNS   : -42.000
+
+Type  : Minimum Pulse Width 'EnStop'
+Slack : -3.500
+TNS   : -28.000
+
+Type  : Minimum Pulse Width 'STROB'
+Slack : -3.500
+TNS   : -28.000
+
+Type  : Minimum Pulse Width 'fddf3'
+Slack : -3.500
+TNS   : -28.000
+
+Type  : Minimum Pulse Width 'inst123'
+Slack : -3.500
+TNS   : -28.000
+
+Type  : Minimum Pulse Width 'Comp_min1'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Minimum Pulse Width 'inst77dfvdfv'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Minimum Pulse Width 'Comp0'
+Slack : -3.500
+TNS   : -14.000
+
+Type  : Minimum Pulse Width 'Comp_min2'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Minimum Pulse Width 'Comp_plus'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Minimum Pulse Width 'dssdfsf92'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Minimum Pulse Width 'fddf2'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Minimum Pulse Width 'fddf3sd107'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Minimum Pulse Width 'fddf68ghhg'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Minimum Pulse Width 'fddfsfff'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Minimum Pulse Width 'fddfsfff108'
+Slack : -3.500
+TNS   : -7.000
+
+Type  : Minimum Pulse Width 'fddfssd9'
+Slack : -3.500
+TNS   : -7.000
+
+------------------------------------------------------------
